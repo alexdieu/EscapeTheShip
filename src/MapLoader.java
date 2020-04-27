@@ -11,7 +11,7 @@ public class MapLoader {
         List<String> mapData;
 
         try {
-            mapData = Files.readAllLines(Paths.get("C:/Users/alexdieu/Downloads/WORKSPACE/escapetheship/src/ressources/" + mapName + ".txt"), StandardCharsets.UTF_8);
+            mapData = Files.readAllLines(Paths.get("src/ressources/" + mapName + ".txt"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();
             return null;
